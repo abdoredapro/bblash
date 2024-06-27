@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color: #CA002C;
+}
+a {
+    text-decoration: none;
+}
+body {
+    height: 1000px;
+    font-family: "Tajawal", sans-serif;
+}
+.home_page {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('images/background.png');
+    background-size: cover;
+    position: relative;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #00000026;    
+}
+@media (max-width: 768px) { 
+    .layer {
+        width: 100%;
+    }
+}
+.home_page nav.scrolling {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition:all 0.6s ease-in-out;
+}
+
+.home_page nav.scrolling .logo img {
+    width: 141px;
+    height: 59px;
+    background-color: #CA002C;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.home_page .logo img {
+    width: 141px;
+    height: 59px;
+}
+
+.home_page ul.navbar-nav li a.active {
+    border-bottom: 1px solid #CA002C;
+    color: #CA002C !important;
+    font-weight: 500;
+}
+
+
+.home_page ul.navbar-nav li a {
+    color: #fff !important;
+    font-weight: 500;
+}
+.home_page nav.scrolling ul.home-title li a:not(.active){
+    color: #000 !important;
+}
+
+.home_page ul.login {
+    display: flex;
+
+}
+.home_page ul.login li {
+    margin-right: 15px;
+}
+.home_page ul.login li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+}
+.home_page ul.login li a.nav-register {
+    background-color: #CA002C;
+    color: #fff !important;
+    border-radius: 8px;
+    border: 1px solid #CA002C;
+    padding: 8px;
+}
+.home_page ul.login li a.nav-login {
+    border: 1px solid #4C6373;
+    border-radius: 8px;
+    color: #4C6373 !important;
+    padding: 8px;
+}
+.home_page ul.login li a.lang {
+    border: 1px solid #4C6373;
+    border-radius: 8px;
+    color: #4C6373 !important;
+    padding: 8px;
+}
+
+/* start what is  */
+.what_is {
+    padding: 10px 0;
+}
+.what_is .parent {
+    align-items: center;
+}
+.what_is .about {
+    text-align: right;
+}
+.what_is .about .head{
+    color: var(--color);
+    background-color: #fff;
+    width: fit-content;
+    padding: 10px;
+    -o-transform: skew(30deg);
+    transform: skew(30deg);
+    margin-bottom: 20px;
+}
+
+.what_is .about .head h6 {
+    color: #CA002C;
+    transform: skew(-27deg);
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+}
+.what_is .about p {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.what_is .about a {
+    color: #fff;
+    background-color: #CA002C;
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.what_is .item li {
+    background-color: #FFF;
+    background-color: #FFF;
+    text-align: right;
+    padding: 10px 12px;
+    border-radius: 4px;
+    border-bottom: 2px solid #00000047;
+}
+.what_is .item li .head {
+    display: flex;
+    align-items: center;
+
+}
+.what_is .item li .head img {
+    width: 79px;
+    height: 79px;
+    margin-left: 20px;
+}
+.what_is .item li .head h3 {
+    color: #CA002C;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 28px;
+}
+.what_is .item li p {  
+    font-size: 14px;
+    font-weight: 500;
+    color: #101010;
+    line-height: 19px;
+}
+/* end what is  */
+
+/* start products */
+.products .head{
+    color: var(--color);
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+}   
+.products .head::after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    content: "";
+    background-color: #CA002C;
+    display: inline-block;
+    position: absolute;
+    left: 46%;
+}
+.products .card #carouselExampleIndicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.products .card #carouselExampleIndicators li.active {
+    background-color: #CA002C;
+}
+.products .card-body .download {
+    background-color: #CA002C;
+    border-radius: 4px;
+    height: 36px;
+    width: 95px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* end products */
+
